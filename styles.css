@@ -1,3 +1,7 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,18 +9,18 @@
 }
 
 #topSection {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
 }
 
 #bottomSection {
-  height: 80vh;
+  height: 90vh;
   position: relative;
 }
 
 .pageNumber {
   position: absolute;
-  top: -15%;
+  top: -10%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 40px;
@@ -31,7 +35,7 @@
 
 .pageNumber2 {
   position: absolute;
-  bottom: -8%;
+  bottom: -7%;
   z-index: 999;
   background-color: #fff;
   left: 50%;
@@ -88,7 +92,6 @@ main {
   flex-direction: column;
 }
 .headerContent h1 {
-  font-family: "Red Hat Display";
   font-size: 45px;
   text-align: center;
 }
@@ -96,6 +99,7 @@ main {
   width: 80%;
   text-align: center;
   margin: 3rem 0;
+  opacity: 0.5;
 }
 
 .imageGroup2,
@@ -115,10 +119,19 @@ main {
   margin-right: -1rem;
 }
 
+.buttonsss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .buttonsss button:first-child {
   background-color: #4d96a9;
-  padding: 0.7rem 1rem;
-  border-radius: 1.3rem;
+  /* padding: 0.7rem 1rem; */
+  width: 12.063rem;
+  height: 3.625rem;
+  border-radius: 10rem;
   border: none;
   outline: none;
   color: #fff;
@@ -132,8 +145,10 @@ main {
 
 .buttonsss button:last-child {
   background-color: #855fb1;
-  padding: 0.7rem 1rem;
-  border-radius: 1.3rem;
+  /* padding: 0.7rem 1rem; */
+  width: 8.688rem;
+  height: 3.625rem;
+  border-radius: 10rem;
   border: none;
   outline: none;
   color: #fff;
@@ -174,7 +189,7 @@ main {
 
 .middleImagesContent p {
   text-align: center;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .middleImagesContent span {
@@ -191,7 +206,7 @@ footer {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 30vh;
+  height: 40vh;
 }
 footer {
   position: relative;
@@ -215,7 +230,10 @@ footer .footerContent {
 }
 .footerContent button {
   background-color: #855fb1;
+  /* padding: 0.7rem 1rem; */
   padding: 0 2rem;
+  width: 12.063rem;
+  height: 3.625rem;
   border-radius: 3rem;
   border: none;
   outline: none;
@@ -232,6 +250,10 @@ footer button:hover {
   opacity: 0.5;
 }
 
+.footerContent p {
+  width: 36%;
+}
+
 /* <!--
   Responsiveness
   for
@@ -240,7 +262,7 @@ footer button:hover {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   #topSection {
-    height: 160vh;
+    height: 100vh;
     width: 100%;
   }
 
@@ -267,7 +289,7 @@ footer button:hover {
   }
 
   #bottomSection {
-    height: 80vh;
+    height: 50vh;
     position: relative;
   }
 
@@ -298,8 +320,14 @@ footer button:hover {
     align-items: center;
     text-align: center;
   }
+
+  .footerContent h2 {
+    font-size: 2.5rem;
+  }
+
   .footerContent p {
-    margin: 1rem 0;
+    margin: 1rem 0 2rem;
+    width: 100%;
   }
   .footerContent button {
     padding: 1rem 1.6rem;
@@ -310,7 +338,7 @@ footer button:hover {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #topSection {
-    height: 130vh;
+    height: 140vh;
   }
 
   main {
@@ -341,7 +369,7 @@ footer button:hover {
   }
 
   #bottomSection {
-    height: 80vh;
+    height: 110vh;
     position: relative;
     margin-top: 5rem;
   }
@@ -364,9 +392,6 @@ footer button:hover {
     width: 120px;
     border-radius: 0.5rem;
   }
-  #bottomSection {
-    height: 120vh;
-  }
 
   .middleImagesContent p {
     width: 90%;
@@ -382,7 +407,7 @@ footer button:hover {
   }
 
   footer {
-    height: 50vh;
+    height: 60vh;
   }
   .footerContent {
     display: flex;
@@ -393,6 +418,7 @@ footer button:hover {
   }
   .footerContent p {
     margin: 1rem 0;
+    width: 100%;
   }
   .footerContent button {
     padding: 1rem 1.6rem;
