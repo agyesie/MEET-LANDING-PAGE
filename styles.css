@@ -1,20 +1,20 @@
-body {
-  font-family: "Red Hat Display", sans-serif;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
 #topSection {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
 }
 
 #bottomSection {
-  height: 90vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -35,7 +35,7 @@ body {
 
 .pageNumber2 {
   position: absolute;
-  bottom: -7%;
+  bottom: -6%;
   z-index: 999;
   background-color: #fff;
   left: 50%;
@@ -73,6 +73,8 @@ main {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 100%;
+  min-width: 100%;
 }
 
 .tabletImage {
@@ -83,6 +85,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .headerContent {
@@ -92,14 +95,22 @@ main {
   flex-direction: column;
 }
 .headerContent h1 {
-  font-size: 45px;
+  color: #28283d;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 64px;
+  font-size: 64px;
   text-align: center;
 }
 .headerContent p {
-  width: 80%;
   text-align: center;
+  color: #87879d;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
   margin: 3rem 0;
-  opacity: 0.5;
+  line-height: 26px;
+  width: 540px;
 }
 
 .imageGroup2,
@@ -135,7 +146,11 @@ main {
   border: none;
   outline: none;
   color: #fff;
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 26px;
+  text-align: center;
   cursor: pointer;
 }
 .buttonsss button:first-child:hover {
@@ -152,7 +167,9 @@ main {
   border: none;
   outline: none;
   color: #fff;
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 16px;
+  font-style: normal;
   cursor: pointer;
 }
 .buttonsss button:last-child:hover {
@@ -161,12 +178,16 @@ main {
 }
 .buttonsss button:first-child span {
   color: #8fe3f9;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 26px;
 }
 
 .middleImages {
   display: flex;
   justify-content: center;
-  gap: 0.7rem;
+  gap: 20px;
   width: 100%;
   margin: 0 auto;
 }
@@ -179,25 +200,38 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+  margin: 4rem auto 0;
+  width: 540px;
+  height: 240px;
+  flex-shrink: 0;
 }
 .middleImagesContent h2 {
   margin: 1.5rem auto;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 44px;
+  color: #28283d;
 }
 
 .middleImagesContent p {
   text-align: center;
-  opacity: 0.5;
+  color: #87879d;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  font-style: normal;
 }
 
 .middleImagesContent span {
   color: #4d96a9;
-  font-size: 12px;
   font-weight: 900;
-  font-family: monospace;
-  letter-spacing: 3px;
+  font-size: 16px;
+  font-style: normal;
+  letter-spacing: 4px;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 
 footer {
@@ -213,32 +247,43 @@ footer {
 }
 footer .footerContent {
   display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 65%;
+  justify-content: center;
+  align-items: center;
+  gap: 125px;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
 }
 .footerContent h2 {
-  color: #fff;
+  color: #fafafa;
+  font-size: 30px;
   font-weight: 900;
+  font-style: normal;
+  /* line-height: 44px; */
+  /* width: 350px; */
 }
 .footerContent p {
-  color: #fff;
-  opacity: 0.9;
+  width: 450px;
+  color: #fafafa;
+  /* font-family: Red Hat Display; */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 144.444% */
 }
+
 .footerContent button {
   background-color: #855fb1;
-  /* padding: 0.7rem 1rem; */
-  padding: 0 2rem;
-  width: 12.063rem;
-  height: 3.625rem;
-  border-radius: 3rem;
+  width: 193px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 29px;
   border: none;
   outline: none;
   color: #fff;
-  font-weight: 700;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 16px;
   cursor: pointer;
 }
 footer button:hover {
@@ -270,6 +315,23 @@ footer button:hover {
     flex-direction: column;
   }
 
+  .headerContent {
+    width: 100%;
+  }
+
+  .headerContent h1 {
+    color: #28283d;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px; /* 100% */
+  }
+
+  .headerContent p {
+    width: 457px;
+  }
+
   .tabletImage {
     display: block;
   }
@@ -288,14 +350,30 @@ footer button:hover {
     top: -10%;
   }
 
+  .pageNumber2 {
+    position: absolute;
+    bottom: -7%;
+  }
+
   #bottomSection {
-    height: 50vh;
+    height: 60vh;
     position: relative;
+    margin-top: 5rem;
   }
 
   .imageGroup2,
   .imageGroup1 {
     display: none;
+  }
+
+  .middleImagesContent {
+    width: 573px;
+    height: 240px;
+    flex-shrink: 0;
+  }
+
+  .middleImagesContent p {
+    font-size: 16px;
   }
 
   .middleImages {
@@ -307,30 +385,38 @@ footer button:hover {
   }
 
   .middleImages img {
-    width: 120px;
+    width: 160px;
     border-radius: 0.5rem;
   }
   footer {
     height: 50vh;
   }
-  .footerContent {
+
+  footer .footerContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: 32px;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
   }
 
   .footerContent h2 {
     font-size: 2.5rem;
+    width: 457px;
+    text-align: center;
   }
 
   .footerContent p {
-    margin: 1rem 0 2rem;
     width: 100%;
+    text-align: center;
   }
   .footerContent button {
-    padding: 1rem 1.6rem;
+    width: 193px;
+    height: 58px;
+    flex-shrink: 0;
   }
 }
 
@@ -338,11 +424,22 @@ footer button:hover {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #topSection {
-    height: 140vh;
+    height: 120vh;
   }
 
   main {
     flex-direction: column;
+  }
+
+  .headerContent h1 {
+    line-height: 44px;
+    font-size: 40px;
+  }
+
+  .headerContent p {
+    font-size: 16px;
+    line-height: 26px;
+    width: 100%;
   }
 
   .tabletImage {
@@ -368,10 +465,31 @@ footer button:hover {
     top: -10%;
   }
 
+  .middleImagesContent {
+    width: 327px;
+    height: 284px;
+    flex-shrink: 0;
+  }
+
+  .middleImagesContent h2 {
+    font-size: 32px;
+    line-height: 36px;
+    width: 327px;
+  }
+
+  .middleImagesContent p {
+    color: #87879d;
+    text-align: center;
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+    width: 327px;
+  }
+
   #bottomSection {
-    height: 110vh;
     position: relative;
-    margin-top: 5rem;
   }
 
   .imageGroup2,
@@ -383,13 +501,13 @@ footer button:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    gap: 0.7rem;
+    width: 100%;
+    gap: 1rem;
     margin: 0 auto;
   }
 
   .middleImages img {
-    width: 120px;
+    width: 160px;
     border-radius: 0.5rem;
   }
 
@@ -403,24 +521,41 @@ footer button:hover {
 
   .pageNumber2 {
     position: absolute;
-    bottom: -6%;
+    bottom: -4.5%;
   }
 
   footer {
     height: 60vh;
   }
-  .footerContent {
+  footer .footerContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: 32px;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
   }
+
+  .footerContent h2 {
+    color: #fafafa;
+    text-align: center;
+    /* font-family: "Red Hat Display"; */
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px; /* 112.5% */
+  }
+
   .footerContent p {
     margin: 1rem 0;
     width: 100%;
+    text-align: center;
   }
   .footerContent button {
-    padding: 1rem 1.6rem;
+    width: 193px;
+    height: 58px;
+    flex-shrink: 0;
   }
 }
